@@ -2,26 +2,163 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+.bubble-pop {
+  animation: showBubble ease-in-out 1s forwards;
+}
+
+.show-hey {
+  animation: showHey ease-in 0.5s forwards;
+  animation-delay: 1s;
+}
+
+.wiggle-hand {
+  animation: wiggle linear 1s infinite;
+  animation-delay: 1.5s;
+}
+
+.show-from-bottom {
+  animation: showFromBottom ease-out 0.5s;
+}
+
+.show-slow {
+  animation: showSlow ease-out 1s;
+}
+
+.show-tech-icon {
+  opacity: 0;
+  animation: showTechIcon ease-in-out 0.7s forwards;
+  animation-delay: 1.1s;
+}
+
+.show-tech-icon:nth-child(2) {
+  opacity: 0;
+  animation: showTechIcon ease-in-out 0.7s forwards;
+  animation-delay: 1.3s;
+}
+
+.show-tech-icon:nth-child(3) {
+  opacity: 0;
+  animation: showTechIcon ease-in-out 0.7s forwards;
+  animation-delay: 1.5s;
+}
+
+.show-tech-icon:nth-child(4) {
+  opacity: 0;
+  animation: showTechIcon ease-in-out 0.7s forwards;
+  animation-delay: 1.7s;
+}
+
+.show-tech-icon:nth-child(5) {
+  opacity: 0;
+  animation: showTechIcon ease-in-out 0.7s forwards;
+  animation-delay: 1.9s;
+}
+
+.show-tech-icon:nth-child(6) {
+  opacity: 0;
+  animation: showTechIcon ease-in-out 0.7s forwards;
+  animation-delay: 2.1s;
+}
+
+.show-card-left {
+  animation: showCardLeft ease-out 1.5s forwards;
+  animation-delay: 200ms;
+}
+
+.show-card-right {
+  animation: showCardRight ease-out 1.5s forwards;
+  animation-delay: 200ms;
+}
+
+@keyframes showBubble {
+  0% {
+    transform: translate(30px, 30px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(130px, -95px);
+    opacity: 1;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes showHey {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes showFromBottom {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes showTechIcon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showSlow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showCardLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes showCardRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
