@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FC } from "react";
 
 interface ICard {
@@ -6,12 +7,13 @@ interface ICard {
   stack: string
   demoLink?: string
   sourceLink?: string
+  image: string
 }
 
-export const Card: FC<ICard> = ({title, description, stack, demoLink, sourceLink}) => {
+export const Card: FC<ICard> = ({title, description, stack, demoLink, sourceLink, image}) => {
   return (
-    <div className="min-h-[400px] flex flex-wrap justify-between items-center">
-      <div className="max-w-[500px] flex flex-col space-y-4 my-4 order-2 md:-order-none">
+    <div className="min-h-[400px] flex flex-wrap justify-between items-center my-10">
+      <div className="max-w-[480px] flex flex-col space-y-4 my-4 order-2 md:-order-none">
         <h3 className="text-2xl text-second font-bold">
           {title}
         </h3>
@@ -30,11 +32,7 @@ export const Card: FC<ICard> = ({title, description, stack, demoLink, sourceLink
           </a>
         </div>
       </div>
-      <div>
-        <div className="w-[350px] h-[300px] bg-gray-100">
-          <p>img</p>
-        </div>
-      </div>
+        <Image src={image} alt={image} width={500} height={400} unoptimized={true} className="border border-gray-200 rounded" />
     </div>
   )
 }

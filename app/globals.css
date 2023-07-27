@@ -67,6 +67,12 @@
   animation-delay: 2.1s;
 }
 
+.show-tech-icon:nth-child(7) {
+  opacity: 0;
+  animation: showTechIcon ease-in-out 0.7s forwards;
+  animation-delay: 2.3s;
+}
+
 .show-card-left {
   animation: showCardLeft ease-out 1.5s forwards;
   animation-delay: 200ms;

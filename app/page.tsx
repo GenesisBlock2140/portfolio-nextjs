@@ -23,7 +23,7 @@ export default function Home() {
                 Front-end <span className='text-brand'>React</span>
               </h1>
               <p className='text-xl text-[#515253]'>Développeur web autodidacte et passionné <br/> recherchant un poste en France.</p>
-              <button className="w-[180px] text-xl bg-brand text-white py-3 px-6 rounded">Me contacter</button>
+              <a href="https://www.linkedin.com/in/nathan-cb-09bb2520a/" target="_blank" className="w-[180px] text-xl bg-brand text-white py-3 px-6 rounded">Me contacter</a>
             </div>
             <div className="flex relative my-10 md:my-0">
               <Image 
@@ -53,10 +53,9 @@ export default function Home() {
               Qui suis je ?
             </h2>
             <p className="max-w-[600px] text-xl font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Cras interdum volutpat tempor. Cras augue sapien, iaculis non interdum non, ultricies nec nulla. 
-              Curabitur gravida malesuada metus. Vestibulum auctor ex sapien, eu rutrum nibh sodales et. 
-              Aenean rutrum vulputate ipsum, vitae lobortis felis vulputate et
+              Hey, moi c'est Nathan, développeur front-end autodidacte basé dans le Sud de la France.
+              Je suis constamment en quête de nouvelles opportunités d'apprentissage pour améliorer mes compétences en développement et relever des défis passionnants.
+              Je possède également des compétences en développement back-end (node & express) et souhaiterai m'orienter vers du fullstack.
             </p>
           </div>
         </div>
@@ -75,6 +74,7 @@ export default function Home() {
               stack="NextJS, React, Typescript, Prisma, NextAuth, Tailwind"
               sourceLink="https://github.com/GenesisBlock2140/flashcard-fullstack"
               demoLink="https://flashcard-fullstack.vercel.app/"
+              image="/fullstackflashcard.png"
             />
           </ObserverWrapper>
           <ObserverWrapper direction="right">
@@ -84,6 +84,7 @@ export default function Home() {
                 plus précisément un site de brocante en ligne permettant de consulter les informations des produits, parcourir les categories, filtrer, ajouter au panier ..."
               stack="NextJS, React, Typescript, Redux Toolkit, Tailwind"
               sourceLink="https://github.com/GenesisBlock2140/ecommerce-nextjs"
+              image="/ecomnextjs.png"
             />
           </ObserverWrapper>
           <ObserverWrapper direction="left">
@@ -93,6 +94,7 @@ export default function Home() {
               stack="NextJS, React, Typescript, Tailwind"
               demoLink="#"
               sourceLink="https://github.com/GenesisBlock2140/portfolio-nextjs"
+              image="/portfolioimg.png"
             />
           </ObserverWrapper>
         </div>

@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const TechStack: FC = () => {
 
-  const logos: string[] = ['nextjs', 'typescript', 'react', 'nodejs', 'express', 'tailwind']
+  const logos: string[] = ['nextjs', 'typescript', 'reduxtoolkit', 'react', 'nodejs', 'express', 'tailwind']
 
   return (
     <div className="flex flex-wrap items-center gap-2 mb-20 md:my-0">
