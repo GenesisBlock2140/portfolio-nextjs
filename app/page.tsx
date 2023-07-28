@@ -84,6 +84,7 @@ export default function Home() {
                 plus précisément un site de brocante en ligne permettant de consulter les informations des produits, parcourir les categories, filtrer, ajouter au panier ..."
               stack="NextJS, React, Typescript, Redux Toolkit, Tailwind"
               sourceLink="https://github.com/GenesisBlock2140/ecommerce-nextjs"
+              demoLink="https://brocante-nextjs.vercel.app/"
               image="/ecomnextjs.png"
             />
           </ObserverWrapper>
