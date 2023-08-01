@@ -6,5 +6,5 @@ Site personnel portfolio permettant de me présenter simplement ainsi que certai
 
 * Typescript
 * React
-* Next JS
+* Next JS 13
 * Tailwind CSS
